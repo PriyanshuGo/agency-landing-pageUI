@@ -8,6 +8,8 @@ function Navbar() {
     const handleMenu = () => {
         setIsOpen(!isOpen);
     }
+// const navLinsks = [{},{},{},{},{}]
+
     return (
         <header >
             <nav className="bg-black text-white rounded-full mt-2 mb-0 m-8">
@@ -39,7 +41,7 @@ function Navbar() {
             </nav>
 
             {/* DropDown */}
-            <div className={`bg-zinc-900 font-thin mt-0 text-white rounded-2xl mx-8 flex flex-col items-center justify-between  ${isOpen ? "py-4" : ""}`}>
+            <div className={`bg-zinc-900 font-thin mt-0 text-white rounded-2xl mx-8 flex flex-col items-center justify-between  ${isOpen ? "py-4" : ""} transition-all ease-in-out duration-700`}>
 
                 <ul className={`nav-links ${isOpen ? "block" : "hidden"} ${isOpen ? "space-y-2" : ""}`}>
                     <li> <a href="#">Home</a> </li>
