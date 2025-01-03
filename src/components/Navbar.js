@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import { useState } from "react";
 import { Menu } from 'lucide-react';
 
@@ -11,17 +12,17 @@ function Navbar() {
     return (
         <header>
             {isOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-10 lg:hidden"></div>
+                <div className="fixed inset-0 bg-black bg-opacity-50 z-10 lg:hidden"></div>
             )}
-            <nav className={`bg-black text-white rounded-full mt-2 mb-2 m-8 ${isOpen ? "relative z-20" : ""}`}>
+            <nav className={`bg-black text-white rounded-full mt-2 mb-2 m-4 flex items-center ${isOpen ? "z-20 relative" : ""}`}>
 
                 <div className="container flex items-center justify-between py-2 mx-auto">
 
                     {/* logo section */}
-                    <a href="#" className="logo ml-10">NEXTZONE</a>
+                    <a href="#" className="logo ml-10 h-11 flex items-center">NEXTZONE</a>
 
                     {/* Hamburger Icon */}
-                    <button className="text-white text-2xl mr-4 lg:hidden" onClick={handleMenu}>
+                    <button className="text-white text-2xl mr-4 lg:hidden h-11" onClick={handleMenu}>
                         <Menu />
                     </button>
 
@@ -29,7 +30,9 @@ function Navbar() {
                     <ul className={`nav-links hidden font-thin text-sm lg:flex lg:flex-row lg:justify-between lg:items-center lg:space-x-8`}>
                         {navLinks.map((el, index) => (
                             <li key={index}>
-                                <a href={el.href}>{el.lable}</a>
+                                <Link href={el.href}>
+                                    {el.lable}
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -45,12 +48,13 @@ function Navbar() {
             </nav>
 
             {/* Mobile DropDown */}
-            <div className={`bg-zinc-800 font-thin mt-0 text-white rounded-2xl mx-8 flex flex-col justify-around ${isOpen ? "py-6 opacity-100 relative z-20" : ""} overflow-hidden transition-all duration-300 ease-in-out  lg:hidden z-20`}>
-
+            <div className={`absolute left-0 right-0 bg-zinc-800 font-thin text-white rounded-2xl mx-4 flex flex-col justify-around ${isOpen ? " py-6 opacity-100 z-40" : "opacity-0 invisible"} transition-all duration-300 ease-in-out lg:hidden`}>
                 <ul className={`nav-links ${isOpen ? "block space-y-4 mx-8 my text-lg font-semibold" : "hidden"}`}>
                     {navLinks.map((el, index) => (
                         <li key={index}>
-                            <a href={el.href}>{el.lable}</a>
+                            <Link href={el.href}>
+                                {el.lable}
+                            </Link>
                         </li>
                     ))}
                 </ul>
