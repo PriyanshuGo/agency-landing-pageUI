@@ -48,7 +48,7 @@ function Navbar() {
             </nav>
 
             {/* Mobile DropDown */}
-            <div className={`absolute left-0 right-0 bg-zinc-800 font-thin text-white rounded-2xl mx-4 flex flex-col justify-around ${isOpen ? " py-6 opacity-100 z-40" : "opacity-0 invisible"} transition-all duration-300 ease-in-out lg:hidden`}>
+            <div className={`absolute left-0 right-0 bg-black font-thin text-white rounded-2xl mx-4 flex flex-col justify-around ${isOpen ? " py-6 opacity-100 z-40" : "opacity-0 invisible"} transition-all duration-300 ease-in-out lg:hidden`}>
                 <ul className={`nav-links ${isOpen ? "block space-y-4 mx-8 my text-lg font-semibold" : "hidden"}`}>
                     {navLinks.map((el, index) => (
                         <li key={index}>
