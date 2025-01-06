@@ -27,7 +27,7 @@ function HeroSection() {
 
               <span className='text-lg'>5.0</span>
               <div className='flex text-orange-500 size-12 items-start m-0'>
-                {[...Array(5)].map((_, index) => (
+                {Array(5).fill(null).map((_, index) => (
                 <Star key={index} className='fill-current' />
                  ))}
               </div>
