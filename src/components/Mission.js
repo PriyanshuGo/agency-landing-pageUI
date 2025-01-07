@@ -48,7 +48,7 @@ function Section1() {
             <div className="mx-5 space-y-5 my-5 box-border lg:space-y-10 items-end lg:pointer-events-none">
                 <div className='py-4 border-t w-full xl:w-80'>
                     <button onClick={() => handleToggle("mission")} className="flex w-full justify-between">
-                        <p className="lg:font-bold text-2xl">+OUR MISSION</p>
+                        <p className="text-2xl lg:text-xl">+OUR MISSION</p>
                         <ChevronDown
                             className={` ${isToggle === "mission" ? 'transform rotate-180' : ''
                                 } transition-all duration-200 lg:hidden `}
@@ -57,8 +57,8 @@ function Section1() {
                     <p className={`${isToggle === "mission" ? "block" : "hidden"} lg:block `}>Next Zone is a full service Digital agency working at the intersection design, technology and human interaction</p>
                 </div>
                 <div className='py-4 border-t w-full xl:w-80'>
-                    <button onClick={() => handleToggle("vision")} className="flex w-full justify-between ">
-                        <p className="lg:font-bold text-2xl">+OUR VISION</p>
+                    <button onClick={() => handleToggle("vision")} className="flex w-full justify-between">
+                        <p className="text-2xl lg:text-xl">+OUR VISION</p>
                         <ChevronDown
                             className={` ${isToggle === "vision" ? 'transform rotate-180' : ''
                                 } transition-all duration-200 lg:hidden`}

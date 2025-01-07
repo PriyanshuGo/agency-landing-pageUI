@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Mission from "@/components/Mission";
-import Image from "next/image";
+import Service from "@/components/Service";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Mission />
+      <Service />
     </div>
   );
 }
