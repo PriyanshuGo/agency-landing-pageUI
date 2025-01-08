@@ -8,22 +8,22 @@ function Service() {
         setScreen(screen === item ? null : item)
     }
     return (
-        <div className="flex flex-col my-10 mx-4 lg:mx-10 lg:space-y-12">
+        <div className="flex flex-col my-16 mx-4 space-y-4 lg:mx-10 lg:space-y-12">
 
-            <div className="lg:flex justify-between sm:mx-5">
-                <h1 className="font-semibold text-2xl md:text-4xl lg:text-6xl">POPULAR <br /><span className="font-serif italic">SERVICE</span></h1>
-                <span className="text-xs">Next Zone is a full service Digital agency working at the intersection of design, technology and human interaction.</span>
+            <div className="lg:flex justify-between sm:mx-5 items-center space-y-2">
+                <h1 className="font-semibold text-3xl sm:text-4xl lg:text-6xl">POPULAR <br /><span className="font-serif italic">SERVICE</span></h1>
+                <p className="text-xs lg:text-base">Next Zone is a full service Digital agency working at <br /> the intersection of design, technology and human interaction.</p>
             </div>
 
-            <div className="sm:flex justify-between sm:mx-5 md:space-x-2 lg:space-x-6">
+            <div className="sm:flex justify-between sm:mx-5 sm:h-[60vh] sm:space-x-2 lg:space-x-6 ">
 
-                <div className="flex flex-col my-5 sm:w-1/2 lg:w-2/5">
+                <div className="flex flex-col my-5 space-y-2 sm:my-0 justify-around sm:w-1/2 lg:w-2/5 ">
 
-                    <div className="cursor-pointer space-y-2 py-2" >
-                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100 flex items-center border-b-4 " onClick={() => { showScreen("branding") }}>
+                    <div className="cursor-pointer space-y-2 " >
+                        <div className="bg-white py-2 sm:py-7 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-200 flex items-center border-b-4 " onClick={() => { showScreen("branding") }}>
                             BRANDING
                         </div>
-                        <div className={`${screen === "branding" ? "block" : 'hidden'} sm:hidden transition-all duration-400`}>
+                        <div className={`${screen === "branding" ? "block" : 'hidden'} my-2 sm:hidden transition-all duration-400`}>
                             <Image
                                 src="/branding.jpg" // Relative or absolute URL
                                 alt="BRANDING" // Accessibility text
@@ -36,10 +36,10 @@ function Service() {
                     </div>
 
                     <div className="cursor-pointer space-y-2" >
-                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100 flex items-center border-b-4" onClick={() => { showScreen("web") }}>
+                        <div className="bg-white py-2 sm:py-7 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-200 flex items-center border-b-4" onClick={() => { showScreen("web") }}>
                             WEB DESIGN
                         </div>
-                        <div className={`${screen === "web" ? "block" : 'hidden'} sm:hidden transition-all duration-400`}>
+                        <div className={`${screen === "web" ? "block" : 'hidden'} my-2 sm:hidden transition-all duration-400`}>
                             <Image
                                 src="/web.jpg" // Relative or absolute URL
                                 alt="WEB DESIGN" // Accessibility text
@@ -52,7 +52,7 @@ function Service() {
                     </div>
 
                     <div className="cursor-pointer space-y-2" >
-                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100 flex items-center border-b-4" onClick={() => { showScreen("development") }}>
+                        <div className="bg-white py-2 sm:py-7 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-200 flex items-center border-b-4" onClick={() => { showScreen("development") }}>
                             DEVELOPMENT
                         </div>
                         <div className={`${screen === "development" ? "block" : 'hidden'} sm:hidden transition-all duration-400`}>
@@ -68,7 +68,7 @@ function Service() {
                     </div>
                     
                     <div className="cursor-pointer space-y-2" >
-                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100 flex items-center border-b-4" onClick={() => { showScreen("UI/UX") }}>
+                        <div className="bg-white py-2 sm:py-7 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-200 flex items-center border-b-4" onClick={() => { showScreen("UI/UX") }}>
                             UI/UX DESIGN
                         </div>
                         <div className={`${screen === "UI/UX" ? "block" : 'hidden'} sm:hidden transition-all duration-400`}>
@@ -85,7 +85,7 @@ function Service() {
                 </div>
 
                 <div className="bg-black hidden sm:block rounded-xl sm:w-1/2 lg:w-3/5">
-                hii
+                
                 </div>
 
             </div>
