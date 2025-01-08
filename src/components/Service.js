@@ -8,22 +8,22 @@ function Service() {
         setScreen(screen === item ? null : item)
     }
     return (
-        <div className="flex flex-col my-10 mx-4 lg:mx-10">
+        <div className="flex flex-col my-10 mx-4 lg:mx-10 lg:space-y-12">
 
-            <div className="lg:flex justify-between lg:mx-5">
-                <h1 className="font-semibold text-2xl">POPULAR <br /><span className="font-serif">SERVICE</span></h1>
+            <div className="lg:flex justify-between sm:mx-5">
+                <h1 className="font-semibold text-2xl md:text-4xl lg:text-6xl">POPULAR <br /><span className="font-serif italic">SERVICE</span></h1>
                 <span className="text-xs">Next Zone is a full service Digital agency working at the intersection of design, technology and human interaction.</span>
             </div>
 
-            <div className="lg:flex justify-between lg:mx-5">
+            <div className="sm:flex justify-between sm:mx-5 md:space-x-2 lg:space-x-6">
 
-                <div className="flex flex-col space-y-2 my-5">
+                <div className="flex flex-col my-5 sm:w-1/2 lg:w-2/5">
 
-                    <div className="cursor-pointer space-y-2" >
-                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100" onClick={() => { showScreen("branding") }}>
+                    <div className="cursor-pointer space-y-2 py-2" >
+                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100 flex items-center border-b-4 " onClick={() => { showScreen("branding") }}>
                             BRANDING
                         </div>
-                        <div className={`${screen === "branding" ? "block" : 'hidden'} lg:hidden transition-all duration-400`}>
+                        <div className={`${screen === "branding" ? "block" : 'hidden'} sm:hidden transition-all duration-400`}>
                             <Image
                                 src="/branding.jpg" // Relative or absolute URL
                                 alt="BRANDING" // Accessibility text
@@ -34,11 +34,12 @@ function Service() {
                             />
                         </div>
                     </div>
+
                     <div className="cursor-pointer space-y-2" >
-                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100" onClick={() => { showScreen("web") }}>
+                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100 flex items-center border-b-4" onClick={() => { showScreen("web") }}>
                             WEB DESIGN
                         </div>
-                        <div className={`${screen === "web" ? "block" : 'hidden'} lg:hidden transition-all duration-400`}>
+                        <div className={`${screen === "web" ? "block" : 'hidden'} sm:hidden transition-all duration-400`}>
                             <Image
                                 src="/web.jpg" // Relative or absolute URL
                                 alt="WEB DESIGN" // Accessibility text
@@ -49,11 +50,12 @@ function Service() {
                             />
                         </div>
                     </div>
+
                     <div className="cursor-pointer space-y-2" >
-                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin " onClick={() => { showScreen("development") }}>
+                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100 flex items-center border-b-4" onClick={() => { showScreen("development") }}>
                             DEVELOPMENT
                         </div>
-                        <div className={`${screen === "development" ? "block" : 'hidden'} lg:hidden transition-all duration-400`}>
+                        <div className={`${screen === "development" ? "block" : 'hidden'} sm:hidden transition-all duration-400`}>
                             <Image
                                 src="/development.jpg" // Relative or absolute URL
                                 alt="DEVELOPMENT" // Accessibility text
@@ -64,11 +66,12 @@ function Service() {
                             />
                         </div>
                     </div>
+                    
                     <div className="cursor-pointer space-y-2" >
-                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100" onClick={() => { showScreen("UI/UX") }}>
+                        <div className="bg-white py-2 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-100 flex items-center border-b-4" onClick={() => { showScreen("UI/UX") }}>
                             UI/UX DESIGN
                         </div>
-                        <div className={`${screen === "UI/UX" ? "block" : 'hidden'} lg:hidden transition-all duration-400`}>
+                        <div className={`${screen === "UI/UX" ? "block" : 'hidden'} sm:hidden transition-all duration-400`}>
                             <Image
                                 src="/uiux.jpg" // Relative or absolute URL
                                 alt="UI/UX" // Accessibility text
@@ -81,8 +84,8 @@ function Service() {
                     </div>
                 </div>
 
-                <div className="bg-black w-full hidden lg:block">
-                
+                <div className="bg-black hidden sm:block rounded-xl sm:w-1/2 lg:w-3/5">
+                hii
                 </div>
 
             </div>
