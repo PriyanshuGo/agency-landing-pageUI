@@ -34,16 +34,16 @@ function Service() {
       </div>
 
       {/* Services Section */}
-      <div className="sm:flex justify-between sm:mx-5 sm:h-[60vh] sm:space-x-2 lg:space-x-6">
+      <div className="sm:flex justify-between sm:mx-5 sm:space-x-2 lg:space-x-6">
         {/* Left Section: Service Items */}
-        <div className="flex flex-col my-5 space-y-2 sm:my-0 justify-around sm:w-1/2 lg:w-2/5">
+        <div className="flex flex-col my-5 space-y-2 sm:my-0 justify-around sm:w-1/2 lg:w-2/5 ">
           {services.map(({ id, name, image }) => (
             <div key={id} className="cursor-pointer space-y-2">
               <div
                 className={`py-2 sm:py-7 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-200 flex items-center border-b-4 ${screen === id ? "bg-black text-white" : ""}`}
                 onClick={() => toggleScreen(id)} 
               >
-                {name}
+                {name} 
               </div>
               {screen === id && (
                 <div className="my-2 sm:hidden transition-all duration-400">
@@ -53,7 +53,7 @@ function Service() {
                     width={500}
                     height={300}
                     priority
-                    className="rounded-3xl max-h-80"
+                    className="rounded-3xl max-h-80 h-auto"
                   />
                 </div>
               )}
@@ -67,6 +67,7 @@ function Service() {
             <Image
               src={selectedService.image}
               alt={selectedService.name}
+              
               layout="fill"
               priority
               className="rounded-3xl object-cover"
