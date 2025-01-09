@@ -13,21 +13,21 @@ function Projects() {
     ];
 
     return (
-        <div className="my-10 mx-4">
+        <div className="my-10 mx-5 lg:my-28">
 
             {/* Header Section */}
-            <div className="lg:flex justify-between mx-10 items-center space-y-2">
-                <h1 className="font-semibold text-3xl sm:text-4xl lg:text-6xl">
-                    SHOWCASE OUR <span className="font-serif font-extralight"> INNOVATIVE <br /></span>PROJECT <span className="font-serif font-extralight">PORTFOLIO</span>
+            <div className="lg:flex justify-between items-center space-y-2">
+                <h1 className="font-semibold text-3xl mx-5 sm:text-4xl lg:text-6xl">
+                    SHOWCASE OUR <span className="font-serif font-extralight"> INNOVATIVE </span>PROJECT <span className="font-serif font-extralight">PORTFOLIO</span>
                 </h1>
-                <p className="text-xs lg:text-base">
-                    Next Zone is a full service Digital agency working at <br /> the
+                <p className="text-xs lg:text-base mx-5">
+                    Next Zone is a full service Digital agency working at the
                     intersection of design, technology and human interaction.
                 </p>
             </div>
 
             {/* Projects */}
-            <div className="flex flex-wrap gap-4 justify-center my-4 lg:py-10">
+            <div className="flex flex-wrap gap-4 justify-center mx-5 my-4 lg:py-10">
                 {projects.map(({ id, name, image, description }) => (
                     <div
                         key={id}

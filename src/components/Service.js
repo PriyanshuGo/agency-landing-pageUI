@@ -20,12 +20,12 @@ function Service() {
   const selectedService = services.find((service) => service.id === screen);
 
   return (
-    <div className="flex flex-col my-10 mx-4 space-y-4 lg:mx-10 lg:space-y-12 lg:py-10">
+    <div className="flex flex-col my-10 mx-5 space-y-4 lg:mx-10 lg:space-y-12 lg:py-10">
       {/* Header Section */}
-      <div className="lg:flex justify-between sm:mx-5 items-center space-y-2">
+      <div className="lg:flex justify-between mx-5 items-center space-y-2">
         <h1 className="font-semibold text-3xl sm:text-4xl lg:text-6xl">
-          POPULAR <br />
-          <span className="font-serif italic">SERVICE</span>
+          <span>POPULAR </span>
+          <span className="font-serif italic"> SERVICE</span>
         </h1>
         <p className="text-xs lg:text-base">
           Next Zone is a full service Digital agency working at <br /> the
@@ -34,7 +34,7 @@ function Service() {
       </div>
 
       {/* Services Section */}
-      <div className="sm:flex justify-between sm:mx-5 sm:space-x-2 lg:space-x-6">
+      <div className="sm:flex justify-between mx-5 sm:space-x-2 lg:space-x-6">
         {/* Left Section: Service Items */}
         <div className="flex flex-col my-5 space-y-2 sm:my-0 justify-around sm:w-1/2 lg:w-2/5 ">
           {services.map(({ id, name, image }) => (

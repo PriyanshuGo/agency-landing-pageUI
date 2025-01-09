@@ -2,11 +2,11 @@ import { Star } from 'lucide-react';
 
 function HeroSection() {
   return (
-    <div className="py-16 bg-gradient-to-br from-zinc-950 via-zinc-900 to-orange-950 rounded-3xl mx-4 flex flex-col box-border text-white overflow-auto">
+    <div className="mx-5 py-10 bg-gradient-to-br from-zinc-950 via-zinc-900 to-orange-950 rounded-3xl flex flex-col box-border text-white overflow-auto">
       
         <div>
         
-          <h1 className="color-white font-extrabold ml-10 text-5xl space-y-0 sm:text-6xl md:ml-16 lg:text-8xl lg:ml-20 !leading-tight">
+          <h1 className="color-white font-extrabold mx-5 text-5xl space-y-0 sm:text-6xl md:mx-16 lg:text-8xl lg:mx-20 !leading-tight">
           <span>WE CREATE</span>                      <br />
           <span className='italic'>AWESOME</span>     <br />
           <span>DESIGN</span>
@@ -14,7 +14,7 @@ function HeroSection() {
 
         </div>
       
-        <div className="flex flex-col ml-10 mt-16 space-y-8 sm:m-15 sm:mt-15 sm:space-y-6 sm:text-lg md:space-x-6 md:ml-16 lg:flex-row lg:items-end lg:mt-20 lg:ml-20 lg:space-x-12">
+        <div className="flex flex-col mx-5 my-8 space-y-8 sm:m-15 sm:my-15 sm:space-y-6 sm:text-lg md:space-x-6 md:mx-16 lg:flex-row lg:items-end lg:mx-20 lg:space-x-12">
         
           <div className="space-x-4">
             <button className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5 ">↗</button>

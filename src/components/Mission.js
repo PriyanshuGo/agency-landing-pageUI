@@ -9,15 +9,16 @@ function Section1() {
     }
 
     return (
-        <div className="box-border my-10 mx-4 rounded-3xl space-y-15 md:flex md:flex-col md:px-16 lg:flex-row lg:justify-between lg:space-y-0 lg:py-20">
-            <div className="space-y-5 mx-5 sm:space-y-12 ">
-                <h1 className="text-3xl font-semibold lg:text-5xl !leading-snug ">
-                    WE SOLVE ALL OF THE                                                                     <br />
-                    BRAND'S BUSINESS                                                                        <br />
-                    PROBLEMS IN THE <span className="font-serif font-thin">INTERNET</span>{" "}             <br />
-                    <span className='font-serif font-thin'>SPACE</span>-- AS WELL AS DEVELOP{" "}           <br />
-                    AND ADAPT <span className="font-serif font-thin">BUSINESS TOOLS.</span>
+        <div className="box-border my-10 mx-5 rounded-3xl space-y-15 md:flex md:flex-col md:px-16 lg:flex-row lg:justify-between lg:space-y-0 lg:py-20">
 
+            <div className="space-y-5 mx-5 sm:space-y-12 ">
+                
+                <h1 className="text-3xl font-semibold lg:text-5xl !leading-snug ">
+                    WE SOLVE ALL OF THE                                                                     
+                    BRAND'S BUSINESS                                                                        
+                    PROBLEMS IN THE <span className="font-serif font-thin">INTERNET</span>{" "}            
+                    <span className='font-serif font-thin'>SPACE</span>-- AS WELL AS DEVELOP{" "}           
+                    AND ADAPT <span className="font-serif font-thin">BUSINESS TOOLS.</span>
                 </h1>
 
                 <div className="flex flex-col lg:flex-row lg:space-y-0 ">
