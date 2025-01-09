@@ -20,7 +20,7 @@ function Service() {
   const selectedService = services.find((service) => service.id === screen);
 
   return (
-    <div className="flex flex-col my-16 mx-4 space-y-4 lg:mx-10 lg:space-y-12">
+    <div className="flex flex-col my-10 mx-4 space-y-4 lg:mx-10 lg:space-y-12 lg:py-10">
       {/* Header Section */}
       <div className="lg:flex justify-between sm:mx-5 items-center space-y-2">
         <h1 className="font-semibold text-3xl sm:text-4xl lg:text-6xl">

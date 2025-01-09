@@ -3,15 +3,22 @@ import { useState } from "react"
 import Image from "next/image";
 
 function Projects() {
-    const projects = [{ id: "1", name: "", image: "/one.jpeg" }, { id: "2", name: "", image: "/two.jpeg" }, { id: "3", name: "", image: "/three.jpeg" }, { id: "4", name: "", image: "/four.jpeg" }, { id: "5", name: "", image: "/five.jpeg" }, { id: "6", name: "", image: "/branding.jpg" }];
+    const projects = [
+        { id: "1", name: "", image: "/one.jpeg", description: "This is project 1 description" },
+        { id: "2", name: "", image: "/two.jpeg", description: "This is project 2 description" },
+        { id: "3", name: "", image: "/three.jpeg", description: "This is project 3 description" },
+        { id: "4", name: "", image: "/four.jpeg", description: "This is project 4 description" },
+        { id: "5", name: "", image: "/five.jpeg", description: "This is project 5 description" },
+        { id: "6", name: "", image: "/branding.jpg", description: "This is project 6 description" }
+    ];
 
     return (
-        <div>
+        <div className="my-10 mx-4">
 
             {/* Header Section */}
-            <div className="lg:flex justify-between mx-5 items-center space-y-2">
+            <div className="lg:flex justify-between mx-10 items-center space-y-2">
                 <h1 className="font-semibold text-3xl sm:text-4xl lg:text-6xl">
-                    SHOWCASE OUR <span className="font-serif font-normal"> INNOVATIVE </span>PROJECT <span className="font-serif font-normal">PORTFOLIO</span>
+                    SHOWCASE OUR <span className="font-serif font-extralight"> INNOVATIVE <br /></span>PROJECT <span className="font-serif font-extralight">PORTFOLIO</span>
                 </h1>
                 <p className="text-xs lg:text-base">
                     Next Zone is a full service Digital agency working at <br /> the
@@ -20,11 +27,11 @@ function Projects() {
             </div>
 
             {/* Projects */}
-            <div className="flex flex-wrap gap-4 justify-center my-4 py-10">
-                {projects.map(({ id, name, image }) => (
+            <div className="flex flex-wrap gap-4 justify-center my-4 lg:py-10">
+                {projects.map(({ id, name, image, description }) => (
                     <div
                         key={id}
-                        className="relative overflow-hidden rounded-lg shadow-lg"
+                        className="group relative overflow-hidden rounded-lg shadow-lg"
                     >
                         <Image
                             src={image}
@@ -33,15 +40,20 @@ function Projects() {
                             height={250}
                             className="rounded-lg max-h-64"
                         />
+                    
+                        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <p className="text-white text-2xl">{description}</p>
+                        </div>
+
                     </div>
                 ))}
 
             </div>
 
             {/* Action buttons */}
-            <div className="flex justify-center my-4">
-            <button className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5 ">↗</button>
-            <button className="rounded-full bg-orange-600 font-bold p-2 px-10 text-black lg:p-4 lg:px-8 lg:text-sm">SEE ALL</button>
+            <div className="flex justify-center my-4 space-x-2">
+                <button className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5 ">↗</button>
+                <button className="rounded-full bg-orange-600 font-bold p-2 px-10 text-black lg:p-4 lg:px-8 lg:text-sm">SEE ALL</button>
             </div>
 
         </div>
