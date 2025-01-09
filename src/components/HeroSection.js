@@ -2,11 +2,11 @@ import { Star } from 'lucide-react';
 
 function HeroSection() {
   return (
-    <div className="h-[calc(100vh-90px)] bg-gradient-to-br from-zinc-950 via-zinc-900 to-orange-950 rounded-3xl mx-4 flex flex-col box-border text-white overflow-auto">
+    <div className="py-16 bg-gradient-to-br from-zinc-950 via-zinc-900 to-orange-950 rounded-3xl mx-4 flex flex-col box-border text-white overflow-auto">
       
         <div>
         
-          <h1 className="color-white font-extrabold ml-10 mt-10 text-5xl space-y-0 sm:mt-16 sm:text-6xl md:ml-16 lg:text-8xl lg:ml-20 lg:mt-20">
+          <h1 className="color-white font-extrabold ml-10 text-5xl space-y-0 sm:text-6xl md:ml-16 lg:text-8xl lg:ml-20 !leading-tight">
           <span>WE CREATE</span>                      <br />
           <span className='italic'>AWESOME</span>     <br />
           <span>DESIGN</span>

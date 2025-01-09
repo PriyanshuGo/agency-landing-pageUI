@@ -9,7 +9,7 @@ function Section1() {
     }
 
     return (
-        <div className="box-border my-10 mx-4 rounded-3xl space-y-15 md:flex md:flex-col md:px-16 lg:flex-row lg:justify-between lg:space-y-0 ">
+        <div className="box-border my-10 mx-4 rounded-3xl space-y-15 md:flex md:flex-col md:px-16 lg:flex-row lg:justify-between lg:space-y-0 lg:py-20">
             <div className="space-y-5 mx-5 sm:space-y-12 ">
                 <h1 className="text-3xl font-semibold lg:text-5xl !leading-snug ">
                     WE SOLVE ALL OF THE                                                                     <br />
