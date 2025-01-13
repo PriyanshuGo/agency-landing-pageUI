@@ -16,18 +16,18 @@ function Projects() {
         <div className="my-10 mx-5 lg:my-28">
 
             {/* Header Section */}
-            <div className="lg:flex justify-between items-center space-y-2">
-                <h1 className="font-semibold text-3xl mx-5 sm:text-4xl lg:text-6xl">
+            <div className="lg:flex justify-between items-center space-y-2 mx-5 md:mx-16 lg:mx-20">
+                <h1 className="font-semibold text-3xl sm:text-4xl lg:text-6xl">
                     SHOWCASE OUR <span className="font-serif font-extralight"> INNOVATIVE </span>PROJECT <span className="font-serif font-extralight">PORTFOLIO</span>
                 </h1>
-                <p className="text-xs lg:text-base mx-5">
+                <p className="text-xs lg:text-base">
                     Next Zone is a full service Digital agency working at the
                     intersection of design, technology and human interaction.
                 </p>
             </div>
 
             {/* Projects */}
-            <div className="flex flex-wrap gap-4 justify-center mx-5 my-4 lg:py-10">
+            <div className="flex flex-wrap gap-4 justify-center mx-5 my-4 md:mx-16 lg:mx-20 lg:py-10">
                 {projects.map(({ id, name, image, description }) => (
                     <div
                         key={id}
@@ -51,7 +51,7 @@ function Projects() {
             </div>
 
             {/* Action buttons */}
-            <div className="flex justify-center my-4 space-x-2">
+            <div className="flex justify-center my-4 space-x-2 ">
                 <button className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5 ">↗</button>
                 <button className="rounded-full bg-orange-600 font-bold p-2 px-10 text-black lg:p-4 lg:px-8 lg:text-sm">SEE ALL</button>
             </div>

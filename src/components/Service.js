@@ -20,9 +20,9 @@ function Service() {
   const selectedService = services.find((service) => service.id === screen);
 
   return (
-    <div className="flex flex-col my-10 mx-5 space-y-4 lg:mx-10 lg:space-y-12 lg:py-10">
+    <div className="flex flex-col my-10 mx-5 space-y-4 lg:space-y-12 lg:py-10">
       {/* Header Section */}
-      <div className="lg:flex justify-between mx-5 items-center space-y-2">
+      <div className="lg:flex justify-between mx-5 items-center space-y-2 md:mx-16 lg:mx-20">
         <h1 className="font-semibold text-3xl sm:text-4xl lg:text-6xl">
           <span>POPULAR </span>
           <span className="font-serif italic"> SERVICE</span>
@@ -34,16 +34,16 @@ function Service() {
       </div>
 
       {/* Services Section */}
-      <div className="sm:flex justify-between mx-5 sm:space-x-2 lg:space-x-6">
+      <div className="sm:flex justify-between mx-5 sm:space-x-2 md:mx-16 lg:mx-20 lg:space-x-6">
         {/* Left Section: Service Items */}
         <div className="flex flex-col my-5 space-y-2 sm:my-0 justify-around sm:w-1/2 lg:w-2/5 ">
           {services.map(({ id, name, image }) => (
             <div key={id} className="cursor-pointer space-y-2">
               <div
-                className={`py-2 sm:py-7 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-200 flex items-center border-b-4 ${screen === id ? "bg-black text-white" : ""}`}
-                onClick={() => toggleScreen(id)} 
+                className={`py-2 sm:py-7 px-4 rounded-xl text-3xl font-thin sm:hover:bg-gray-200 flex items-center border-b-4 ${screen === id ? "bg-black text-white " : ""}`}
+                onClick={() => toggleScreen(id)}
               >
-                {name} 
+                {name}
               </div>
               {screen === id && (
                 <div className="my-2 sm:hidden transition-all duration-400">
@@ -67,7 +67,7 @@ function Service() {
             <Image
               src={selectedService.image}
               alt={selectedService.name}
-              
+
               layout="fill"
               priority
               className="rounded-3xl object-cover"

@@ -9,9 +9,9 @@ function Section1() {
     }
 
     return (
-        <div className="box-border my-10 mx-5 rounded-3xl space-y-15 md:flex md:flex-col md:px-16 lg:flex-row lg:justify-between lg:space-y-0 lg:py-20">
+        <div className="box-border my-10 mx-5 rounded-3xl md:flex md:flex-col lg:flex-row lg:justify-between lg:py-20">
 
-            <div className="space-y-5 mx-5 sm:space-y-12 ">
+            <div className="space-y-5 mx-5 sm:space-y-12 md:mx-16 lg:mx-20">
                 
                 <h1 className="text-3xl font-semibold lg:text-5xl !leading-snug ">
                     WE SOLVE ALL OF THE                                                                     
@@ -46,7 +46,7 @@ function Section1() {
             </div>
 
             {/* MISSION BLOCK */}
-            <div className="mx-5 space-y-5 my-5 box-border lg:space-y-10 items-end lg:pointer-events-none">
+            <div className="mx-5 space-y-5 my-5 box-border md:mx-16 lg:mx-20 lg:space-y-10 lg:pointer-events-none">
                 <div className='py-4 border-t w-full xl:w-80'>
                     <button onClick={() => handleToggle("mission")} className="flex w-full justify-between">
                         <p className="text-2xl lg:text-xl">+OUR MISSION</p>
