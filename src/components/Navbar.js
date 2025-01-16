@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState } from "react";
 import { Menu } from 'lucide-react';
+import ActionBtn from './ActionBtn';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -60,8 +61,8 @@ function Navbar() {
                 </ul>
 
                 <div className={`action-buttons ${isOpen ? "flex flex-col mt-4 border-t mx-6 " : "hidden"}`}>
-                    <button className={`icon-button  bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold mr-0 my-2  ${isOpen ? "mt-4 my-3" : ""}`}>↗</button>
-                    <button className={`cta-button bg-orange-500 px-7 py-3 rounded-full hover:bg-orange-600 text-black border-black font-semibold text-sm my-0 ${isOpen ? "" : ""}`}>REQUEST A PROPOSAL</button>
+                    <ActionBtn classclassName={`icon-button  bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold mr-0 my-2  ${isOpen ? "mt-4 my-3" : ""}`} lable="↗" />
+                    <ActionBtn className={`cta-button bg-orange-500 px-7 py-3 rounded-full hover:bg-orange-600 text-black border-black font-semibold text-sm my-0 ${isOpen ? "" : ""}`} lable="REQUEST A PROPOSAL" />
                 </div>
 
             </div>
