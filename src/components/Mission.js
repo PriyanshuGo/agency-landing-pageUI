@@ -9,7 +9,7 @@ function Section1() {
     }
 
     return (
-        <div className="box-border my-10 mx-5 rounded-3xl md:flex md:flex-col lg:flex-row lg:justify-between lg:py-20">
+        <div className="box-border py-10 mx-5 rounded-3xl md:flex md:flex-col lg:flex-row lg:justify-between lg:py-20">
 
             <div className="space-y-5 mx-5 sm:space-y-12 md:mx-16 lg:mx-20">
                 

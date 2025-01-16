@@ -7,7 +7,7 @@ function HeroSection() {
       
         <div className='mx-5 md:mx-16 lg:mx-20 '>
         
-          <h1 className="color-white font-extrabold text-5xl sm:text-6xl lg:text-8xl !leading-tight">
+          <h1 className="color-white font-extrabold text-5xl sm:text-7xl lg:text-8xl !leading-tight">
           <span>WE CREATE</span>                      <br />
           <span className='italic'>AWESOME</span>     <br />
           <span>DESIGN</span>

@@ -12,7 +12,7 @@ function Projects() {
     ];
 
     return (
-        <div className="my-10 mx-5 lg:my-28">
+        <div className="py-5 md:py-16  mx-5 ">
 
             {/* Header Section */}
             <div className="lg:flex justify-between items-center space-y-2 mx-5 md:mx-16 lg:mx-20">
