@@ -67,7 +67,6 @@ function Service() {
             <Image
               src={selectedService.image}
               alt={selectedService.name}
-
               layout="fill"
               priority
               className="rounded-3xl object-cover"

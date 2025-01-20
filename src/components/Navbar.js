@@ -15,12 +15,12 @@ function Navbar() {
             {isOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 z-10 lg:hidden"></div>
             )}
-            <nav className={`bg-black text-white rounded-full mt-2 mb-2 m-4 flex items-center ${isOpen ? "z-20 relative" : ""}`}>
+            <nav className={`bg-black text-white rounded-full my-2 m-4 flex items-center ${isOpen ? "z-20 relative" : ""}`}>
 
                 <div className="container flex items-center justify-between py-2 mx-auto">
 
                     {/* logo section */}
-                    <a href="#" className="logo ml-10 h-11 flex items-center">NEXTZONE</a>
+                    <a href="#" className="logo ml-10 h-11 flex items-center sm:justify-normal sm:">NEXTZONE</a>
 
                     {/* Hamburger Icon */}
                     <button className="text-white text-2xl mr-4 lg:hidden h-11" onClick={handleMenu}>
@@ -40,8 +40,8 @@ function Navbar() {
 
                     {/* action button */}
                     <div className={`action-buttons hidden font-thin text-sm lg:flex lg:flex-row lg:justify-between lg:items-center lg:space-x-4 px-0 mr-4`}>
-                        <button className="icon-button  bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold mr-0">↗</button>
-                        <button className="cta-button bg-orange-500 px-7 py-3 rounded-full hover:bg-orange-600 text-black border-black font-semibold text-sm">REQUEST A PROPOSAL</button>
+                        <ActionBtn className={"icon-button  bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold"} label="↗" />
+                        <ActionBtn className={"cta-button bg-orange-500 px-7 py-3 rounded-full hover:bg-orange-600 text-black border-black font-semibold text-sm"} label="REQUEST A PROPOSAL" />
                     </div>
 
                 </div>
@@ -61,8 +61,8 @@ function Navbar() {
                 </ul>
 
                 <div className={`action-buttons ${isOpen ? "flex flex-col mt-4 border-t mx-6 " : "hidden"}`}>
-                    <ActionBtn classclassName={`icon-button  bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold mr-0 my-2  ${isOpen ? "mt-4 my-3" : ""}`} lable="↗" />
-                    <ActionBtn className={`cta-button bg-orange-500 px-7 py-3 rounded-full hover:bg-orange-600 text-black border-black font-semibold text-sm my-0 ${isOpen ? "" : ""}`} lable="REQUEST A PROPOSAL" />
+                    <ActionBtn className={`bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold my-2`} label="↗" condition={isOpen}/>
+                    <ActionBtn className={`bg-orange-500 px-7 py-3 rounded-full hover:bg-orange-600 text-black border-black font-semibold text-sm`} label="REQUEST A PROPOSAL" />
                 </div>
 
             </div>
