@@ -14,9 +14,9 @@ function Review() {
     ];
 
     return (
-        <div className="relative mx-5 my-10 md:mx-16 lg:mx-20">
+        <div className="relative mx-5 my-10">
             {/* Scrollable area */}
-            <div className="flex space-x-6 sm:space-x-20 overflow-x-auto scrollbar-hide">
+            <div className="mx-5 md:mx-16 lg:mx-20 flex space-x-6 sm:space-x-20 overflow-x-auto scrollbar-hide">
                 {reviews.map((el) => (
                     <div
                         key={el.id}
@@ -40,7 +40,7 @@ function Review() {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="absolute top-1/2 right-4 transform -translate-y-1/2 h-16 w-16 bg-black bg-opacity-50 rounded-full pointer-events-none flex items-center justify-center transition-all duration-300 ease-in-out group">
+            <div className="mx-5 md:mx-16 lg:mx-20 absolute top-1/2 right-4 transform -translate-y-1/2 h-16 w-16 bg-black bg-opacity-50 rounded-full pointer-events-none flex items-center justify-center transition-all duration-300 ease-in-out group">
                     <div className="group-hover:opacity-100 opacity-70 transition-all duration-300 ease-in-out relative flex items-center justify-center">
                         <ArrowRightToLine 
                             size={32} 

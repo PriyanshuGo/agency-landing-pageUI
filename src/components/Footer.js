@@ -9,16 +9,16 @@ function Footer() {
     ]
 
     return (
-        <div>
-            <div>
+        <div className='my-10 mx-5 flex flex-col text-white bg-black rounded-md lg:flex-row lg:justify-around'>
+            <div className='mx-5 md:mx-16 lg:mx-20 text-center'>
                 <div>NEXTZONE</div>
-                <div>Your One-Stop IT Partner: Branding, Web Development, and Tailored Solutions for Every Need</div>
+                <div className='text-sm'>Your One-Stop IT Partner: Branding, Web Development, and Tailored Solutions for Every Need</div>
             </div>
-            <div>
+            <div className='mx-5 md:mx-16 lg:mx-20 text-center'>
                 <div>agencyfolio@gmail.com</div>
-                <ul>
+                <ul className='flex flex-col sm:flex-row sm:justify-evenly items-center'>
                     {footLinks.map((el, index) => (
-                        <li key={indx}>
+                        <li key={index}>
                             <Link href={el.href}>
                             {el.lable}
                             </Link>

@@ -14,7 +14,7 @@ function TeamMembers() {
     { image: "/uiux.jpg", name: "Surya", description: "Head of Content", facebook: "#", linkdedin: "#", instagram: "#" },
   ]
   return (
-    <div className="p-5 text-white bg-black space-y-7">
+    <div className="p-5 text-white bg-gradient-to-br from-zinc-950 via-zinc-900 to-orange-950 space-y-7">
 
       <div className="flex flex-col items-center text-2xl">
         <div className="flex items-center">
