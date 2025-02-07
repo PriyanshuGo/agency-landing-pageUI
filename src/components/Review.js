@@ -4,14 +4,15 @@ import { ArrowRightToLine } from 'lucide-react';
 
 function Review() {
     const reviews = [
-        { id: '1', name: "priyanshu", image: "/one.jpeg", message: "om ganesha" },
-        { id: '2', name: "surya", image: "/two.jpeg", message: "om ganesha" },
-        { id: '3', name: "praveen", image: "/four.jpeg", message: "om ganesha" },
-        { id: '4', name: "nain", image: "/six.jpeg", message: "om ganesha" },
-        { id: '5', name: "nain", image: "/six.jpeg", message: "om ganesha" },
-        { id: '6', name: "nain", image: "/six.jpeg", message: "om ganesha" },
-        { id: '7', name: "nain", image: "/six.jpeg", message: "om ganesha" },
+        { id: '1', name: "Priyanshu", image: "/one.jpeg", message: "Absolutely amazing experience! The service was top-notch, and I couldn’t have asked for a better outcome. Highly recommended!" },
+        { id: '2', name: "Surya", image: "/two.jpeg", message: "The quality exceeded my expectations! The team was professional, responsive, and ensured everything was perfect from start to finish." },
+        { id: '3', name: "Praveen", image: "/four.jpeg", message: "A wonderful experience! The attention to detail was impressive, and I truly appreciate the dedication and effort put into the work." },
+        { id: '4', name: "Nain", image: "/six.jpeg", message: "Customer service was outstanding! They answered all my queries patiently and delivered exactly what I was looking for. Will definitely return!" },
+        { id: '5', name: "Rahul", image: "/six.jpeg", message: "I was pleasantly surprised by the speed and efficiency. The process was smooth, and the end result was even better than I had imagined!" },
+        { id: '6', name: "Ananya", image: "/six.jpeg", message: "A truly seamless and enjoyable experience. The quality of work was fantastic, and I felt valued as a customer throughout the process." },
+        { id: '7', name: "Vikas", image: "/six.jpeg", message: "Exceptional service and attention to detail! Everything was handled professionally, and I’m beyond satisfied with the final result." },
     ];
+    
 
     return (
         <div className="relative mx-5 my-10">
