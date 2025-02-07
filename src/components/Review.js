@@ -39,7 +39,7 @@ function Review() {
                 ))}
             </div>
 
-            {/* Scroll Indicator */}
+            {/* Scroll Indicator
             <div className="mx-5 md:mx-16 lg:mx-20 absolute top-1/2 right-4 transform -translate-y-1/2 h-16 w-16 bg-black bg-opacity-50 rounded-full pointer-events-none flex items-center justify-center transition-all duration-300 ease-in-out group">
                     <div className="group-hover:opacity-100 opacity-70 transition-all duration-300 ease-in-out relative flex items-center justify-center">
                         <ArrowRightToLine 
@@ -47,7 +47,7 @@ function Review() {
                             className="text-white group-hover:scale-125 transition-transform duration-300" 
                         />
                     </div>
-                </div>
+                </div> */}
 
         </div>
     );
