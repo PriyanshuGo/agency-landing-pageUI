@@ -73,7 +73,7 @@ function TeamMembers() {
       </div>
 
       <div className="space-x-5 mx-5 md:mx-16 lg:mx-20">
-        <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5" label="↗" />
+        <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5" label="&#x2197;" />
         <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-8 text-black lg:p-4 lg:px-8 lg:text-sm" label="SEE ALL MEMBERS" />
       </div>
     </div>

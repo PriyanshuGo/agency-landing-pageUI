@@ -40,7 +40,7 @@ function Navbar() {
 
                     {/* action button */}
                     <div className={`action-buttons hidden font-thin text-sm lg:flex lg:flex-row lg:justify-between lg:items-center lg:space-x-4 px-0 mr-4`}>
-                        <ActionBtn className={"icon-button  bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold"} label="↗" />
+                        <ActionBtn className={"icon-button  bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold"} label="&#x2197;" />
                         <ActionBtn className={"cta-button bg-orange-500 px-7 py-3 rounded-full hover:bg-orange-600 text-black border-black font-semibold text-sm"} label="REQUEST A PROPOSAL" />
                     </div>
 
@@ -61,7 +61,7 @@ function Navbar() {
                 </ul>
 
                 <div className={`action-buttons ${isOpen ? "flex flex-col mt-4 border-t mx-6 " : "hidden"}`}>
-                    <ActionBtn className={`bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold my-2`} label="↗" condition={isOpen}/>
+                    <ActionBtn className={`bg-orange-500 hover:bg-orange-600 py-3 px-5 rounded-full border-black text-black font-semibold my-2`} label="&#x2197;" condition={isOpen}/>
                     <ActionBtn className={`bg-orange-500 px-7 py-3 rounded-full hover:bg-orange-600 text-black border-black font-semibold text-sm`} label="REQUEST A PROPOSAL" />
                 </div>
 

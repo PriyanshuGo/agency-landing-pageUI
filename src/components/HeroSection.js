@@ -18,7 +18,7 @@ function HeroSection() {
         <div className="flex flex-col mx-5 my-8 space-y-8 sm:text-lg md:space-x-6 md:mx-16 lg:flex-row lg:space-y-0 lg:mx-20 lg:space-x-12">
         
           <div className="space-x-4 lg:min-w-56">
-            <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5" label="↗" />
+            <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5" label="&#x2197;" />
             <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-10 text-black lg:p-4 lg:px-8 lg:text-sm" label="LET'A TALK" />
           </div>
 

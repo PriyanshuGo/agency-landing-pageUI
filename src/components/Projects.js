@@ -51,7 +51,7 @@ function Projects() {
 
             {/* Action buttons */}
             <div className="flex justify-center my-4 space-x-2 ">
-                <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5" label="↗" />
+                <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-4  text-black lg:p-3 lg:px-5" label="&#x2197;" />
                 <ActionBtn className="rounded-full bg-orange-600 font-bold p-2 px-10 text-black lg:p-4 lg:px-8 lg:text-sm" label="SEE ALL" />
             </div>
 
